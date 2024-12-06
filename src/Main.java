@@ -6,8 +6,8 @@ import java.util.Scanner;
 import static java.lang.System.out;
 
 public class Main {
-    public static String version = "v1.1 Dev";
-    public static String author = "Pawelusz";
+    public static final String VERSION = "v1.1 Dev";
+    public static final String AUTHOR = "Pawelusz";
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -17,7 +17,7 @@ public class Main {
         /*
                         PRODUCTS
         to add product just type:
-        products.put("code", new Product("Product_Name", price like 1.23));
+        "products.put("code", new Product("Product_Name", price like 1.23));"
         and add it in START_MESSAGE section
          */
 
@@ -32,8 +32,8 @@ public class Main {
          */
         out.println(">        PENGUIN SHOP        <");
         out.println(" ");
-        out.println("* - Developer: " + author);
-        out.println("* - Version: " + version);
+        out.println("* - Developer: " + AUTHOR);
+        out.println("* - Version: " + VERSION);
         out.println("* - Ilość produktów na stanie: " + products.size());
         out.println("-------------->");
         out.println(" ");
